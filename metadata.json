@@ -1,0 +1,8 @@
+{
+  "name": "KLELayoutImporter",
+  "description": "Automatically place footprints on the PCB",
+  "version": "1.0",
+  "author": "kgnwsknt.chef",
+  "license": "MIT",
+  "required_kicad_version": "9.0"
+}
