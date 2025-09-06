@@ -1,6 +1,15 @@
 # KLELayoutImporter
-KiCadのです。
-KiCad 9.0.4で動作確認済み。
+KiCadのプラグインです。Keyboard Layout Editorで作成したキーボードのキー配置にキースイッチ・ダイオードのフットプリントを配置します。
+Windows11、KiCad 9.0.4で動作確認済み。
 
-## How to use
-/Users/XXXX/My Documents/KiCad/9.0/scripting/plugins/に負ぉるだごと
+## 使い方
+/Users/XXXX/My Documents/KiCad/9.0/scripting/plugins/にKLELayoutImporterのフォルダごとファイルを置いてください。
+PCBエディターでジグソーパズルのアイコンから実行できます。
+実行後、KLEで作成したキー配列のjsonファイルを選択すると、スイッチ・ダイオードのフットプリントを自動配置します。
+
+### 注意点
+
+- KLEの印字とKiCadのキースイッチの値は同じ文字列にしてください（大文字小文字は区別しません）。
+- KiCadでキースイッチSW??と対応するダイオードD??のアノテーションの番号は一致させるようにしてください。
+- ダイオードの位置や向きなどを変更したい場合はKLELayoutImporter.pyを修正してください。pythonスクリプトを修正した場合、KiCadのPCBエディターでメニュー＞ツール＞プラグイン＞プラグインの更新をしてください。
+- キースイッチの回転などには対応していません。縦のキースイッチの幅が1uより大きいスイッチは多分ダメです。
